@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0deb78e7721409841804a9e080924c04, type: 3}
+  m_Name: 5.KIATigers
+  m_EditorClassIdentifier: 
+  teamId: 5
+  teamNameE: KIA Tigers
+  teamName: "KIA \uD0C0\uC774\uAC70\uC988"
+  teamColor: {r: 0.8392157, g: 0, b: 0.10980392, a: 0}
+  teamLogo: {fileID: 21300000, guid: fd9965d2ab9776f4ea582181ae2af510, type: 3}
+  hatImage: {fileID: 21300000, guid: b76ef1e389f34ab488826d1619abdccc, type: 3}
+  homeStadium: {fileID: 11400000, guid: 44bfd9cb7aab94b4ab819f5a9c31f2b9, type: 2}

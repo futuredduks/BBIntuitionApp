@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0deb78e7721409841804a9e080924c04, type: 3}
+  m_Name: 3.SSGLanders
+  m_EditorClassIdentifier: 
+  teamId: 3
+  teamNameE: SSG Landers
+  teamName: "SSG \uB79C\uB354\uC2A4"
+  teamColor: {r: 0.81960785, g: 0, b: 0, a: 0}
+  teamLogo: {fileID: 21300000, guid: 0286547f8973c4c4bb2678757fb1052b, type: 3}
+  hatImage: {fileID: 21300000, guid: 93aa68f641532c644bb8ac6f1a2d5251, type: 3}
+  homeStadium: {fileID: 11400000, guid: 0ecccc8eb944670498972650bd3d0614, type: 2}

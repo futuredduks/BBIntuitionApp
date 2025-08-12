@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0deb78e7721409841804a9e080924c04, type: 3}
+  m_Name: 4.LotteGiants
+  m_EditorClassIdentifier: 
+  teamId: 4.
+  teamNameE: Lotte Giants
+  teamName: "\uB86F\uB370 \uC790\uC774\uC5B8\uCE20"
+  teamColor: {r: 0.07450981, g: 0.16078432, b: 0.29411766, a: 0}
+  teamLogo: {fileID: 21300000, guid: 013b4dc833a7c7140ab68c071fecf8ef, type: 3}
+  hatImage: {fileID: 21300000, guid: b252ed37f23062147a7d87037e6017aa, type: 3}
+  homeStadium: {fileID: 11400000, guid: 2073862a1311b3d4ea9c79ec099d0d45, type: 2}
