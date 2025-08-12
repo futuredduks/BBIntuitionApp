@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+// 직관 정보 저장 불러오기 코드
+
 public class GameRecordManager : MonoBehaviour
 {
     private string saveFilePath;
