@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 // 직관 정보 저장 불러오기 코드
@@ -53,22 +54,31 @@ public class GameRecordManager : MonoBehaviour
     }
 
 
+    public enum GameResult {
+        Win,
+        Lose,
+        Draw,
+        Unknown
+    }
     //승패 결정 
-    public static bool? CalcualteIsWin(string myTeam, string team_R, string team_L, int score_R, int score_L)
+    public static GameResult CalcualteIsWin(string myTeam, string team_R, string team_L, int score_R, int score_L)
     {
-
         if ((myTeam != team_R) && (myTeam != team_L))
-            return null;
-
+        {
+            Debug.Log("myteam null");
+            return GameResult.Unknown;
+        }
         bool isTeamR = (team_R == myTeam);
         bool isTeamL = (team_L == myTeam);
 
+        if (score_R == score_L)
+            return GameResult.Draw;
+            
+
         if (isTeamR)
-            return score_R > score_L;
-        else if (isTeamL)
-            return score_L > score_R;
+            return (score_R > score_L) ? GameResult.Win : GameResult.Lose;
         else
-            return false;
+            return (score_L > score_R) ? GameResult.Win : GameResult.Lose;
 
     }
 }

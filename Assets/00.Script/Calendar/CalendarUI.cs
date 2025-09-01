@@ -18,22 +18,24 @@ public class CalendarUI : MonoBehaviour
     private int year, month;
     private Dictionary<string, CalendarDayCell> dayCells = new Dictionary<string, CalendarDayCell>();
 
+    public void Awake()
+    {
+        prevMonthBtn.onClick.AddListener(() => { ChangeMonth(-1); });
+        nextMonthBtn.onClick.AddListener(() => { ChangeMonth(1); });
+    }
     public void Init(DateTime? initialDate = null)
     {
         DateTime date = initialDate ?? DateTime.Today;
         year = date.Year;
         month = date.Month;
-
-
+        
         monthText.text = date.ToString("yyyy-MM");
         DrawCalendar();
-
-        prevMonthBtn.onClick.AddListener(() => { ChangeMonth(-1); });
-        nextMonthBtn.onClick.AddListener(() => { ChangeMonth(1); });
     }
 
     void ChangeMonth(int delta) {
         month += delta;
+        Debug.Log("달변경" + month + "." + delta);
         if (month > 12) { month = 1; year++; }
         if (month < 1) { month = 12; year--; }
         DrawCalendar();

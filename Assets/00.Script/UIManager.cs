@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance { get; private set; }
     public CalendarUI calendarUI;
     public GameObject calendarPanel;
+    public GameObject addRecordPanel;
 
     void Awake()
     {
@@ -25,7 +26,7 @@ public class UIManager : MonoBehaviour
             calendarPanel.SetActive(false); // 선택 후 자동 닫기
         };
     }
-    
+
     public void ShowCalendarWithResults(List<CalendarResult> results)
     {
         calendarPanel.SetActive(true);
@@ -36,5 +37,19 @@ public class UIManager : MonoBehaviour
     public void HideCalendar()
     {
         calendarPanel.SetActive(false);
+    }
+
+    public void ShowAddRecordPanel()
+    {
+        if (!addRecordPanel.activeSelf)
+            RecordInputUI.Instance.InitRecordPanel();
+            addRecordPanel.SetActive(true);
+
+    }
+
+    public void HideAddRecordPanel()
+    {
+        if (addRecordPanel.activeSelf)
+            addRecordPanel.SetActive(false);
     }
 }

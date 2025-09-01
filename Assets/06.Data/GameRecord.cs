@@ -11,9 +11,9 @@ public class GameRecord
     public string teamL;
     public string scoreR;
     public string scoreL;
-    public string result;
+    public GameRecordManager.GameResult result;
     public string stadiumName;
-    public bool? isWin;
+    public bool isWin;
     public string memo;
     public string imagePath;
 
