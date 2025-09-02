@@ -58,8 +58,11 @@ public class RecordInputUI : MonoBehaviour
     private void Start()
     {
         recordManager = FindObjectOfType<GameRecordManager>();
+
         recordList = recordManager.LoadRecords();
         recordListCtl.CreateList();
+
+
         selectedDate = DateTime.Today;
         txt_selectedDate.text = selectedDate.ToString("yyyy-MM-dd");
 
@@ -137,6 +140,7 @@ public class RecordInputUI : MonoBehaviour
             recordManager.SaveRecords(recordList);
 
             Debug.Log("저장 완료");
+            recordListCtl.CreateList();
             UIManager.Instance.HideAddRecordPanel();
         }
         else
