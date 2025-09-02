@@ -43,7 +43,7 @@ public class UIManager : MonoBehaviour
     {
         if (!addRecordPanel.activeSelf)
             RecordInputUI.Instance.InitRecordPanel();
-            addRecordPanel.SetActive(true);
+        addRecordPanel.SetActive(true);
 
     }
 
@@ -52,4 +52,5 @@ public class UIManager : MonoBehaviour
         if (addRecordPanel.activeSelf)
             addRecordPanel.SetActive(false);
     }
+
 }

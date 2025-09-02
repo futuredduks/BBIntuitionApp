@@ -37,22 +37,29 @@ public class RecordInputUI : MonoBehaviour
 
     private Texture2D currentPhoto;
     private GameRecordManager recordManager;
+
+    [SerializeField]
+    private RecordListController recordListCtl;
     [SerializeField]
     private GameRecordList recordList;
     [SerializeField]
     private List<string> teamNames = new List<string>();
     private List<string> stadiumNames = new List<string>();
     string myTeamName = "삼성라이온즈"; //테스트용 데이터 값 
+
+    public GameRecordList GameRecordList => recordList;
     void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+        
     }
 
     private void Start()
     {
         recordManager = FindObjectOfType<GameRecordManager>();
         recordList = recordManager.LoadRecords();
+        recordListCtl.CreateList();
         selectedDate = DateTime.Today;
         txt_selectedDate.text = selectedDate.ToString("yyyy-MM-dd");
 
