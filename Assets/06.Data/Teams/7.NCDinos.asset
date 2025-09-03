@@ -15,7 +15,7 @@ MonoBehaviour:
   teamId: 7
   teamNameE: NC Dinos
   teamName: "NC \uB2E4\uC774\uB178\uC2A4"
-  teamColor: {r: 0.11764706, g: 0.30980393, b: 0.5686275, a: 0}
+  teamColor: {r: 0.11764706, g: 0.30980393, b: 0.5686275, a: 1}
   teamLogo: {fileID: 21300000, guid: 7bec2a01abd117246949e584d36c24e4, type: 3}
   hatImage: {fileID: 21300000, guid: 4ab3937851e673c46b7c93497ce0ce83, type: 3}
   homeStadium: {fileID: 11400000, guid: aa90464d47a230f43bf690390feb86da, type: 2}

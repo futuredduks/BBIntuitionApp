@@ -15,7 +15,7 @@ MonoBehaviour:
   teamId: 4.
   teamNameE: Lotte Giants
   teamName: "\uB86F\uB370 \uC790\uC774\uC5B8\uCE20"
-  teamColor: {r: 0.07450981, g: 0.16078432, b: 0.29411766, a: 0}
+  teamColor: {r: 0.07450981, g: 0.16078432, b: 0.29411766, a: 1}
   teamLogo: {fileID: 21300000, guid: 013b4dc833a7c7140ab68c071fecf8ef, type: 3}
   hatImage: {fileID: 21300000, guid: b252ed37f23062147a7d87037e6017aa, type: 3}
   homeStadium: {fileID: 11400000, guid: 2073862a1311b3d4ea9c79ec099d0d45, type: 2}

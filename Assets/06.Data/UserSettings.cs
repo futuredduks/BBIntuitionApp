@@ -6,6 +6,7 @@ using UnityEngine;
 public class UserSettings : MonoBehaviour
 {
     public static UserSettings Instance { get; private set; }
+
     [SerializeField]
     private string nickName;
     [SerializeField]

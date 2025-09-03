@@ -15,7 +15,7 @@ MonoBehaviour:
   teamId: 5
   teamNameE: KIA Tigers
   teamName: "KIA \uD0C0\uC774\uAC70\uC988"
-  teamColor: {r: 0.8392157, g: 0, b: 0.10980392, a: 0}
+  teamColor: {r: 0.8392157, g: 0, b: 0.10980392, a: 1}
   teamLogo: {fileID: 21300000, guid: fd9965d2ab9776f4ea582181ae2af510, type: 3}
   hatImage: {fileID: 21300000, guid: b76ef1e389f34ab488826d1619abdccc, type: 3}
   homeStadium: {fileID: 11400000, guid: 44bfd9cb7aab94b4ab819f5a9c31f2b9, type: 2}

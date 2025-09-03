@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     public CalendarUI calendarUI;
     public GameObject calendarPanel;
     public GameObject addRecordPanel;
+    public GameObject setProfilePanel;
 
     void Awake()
     {
@@ -51,6 +52,11 @@ public class UIManager : MonoBehaviour
     {
         if (addRecordPanel.activeSelf)
             addRecordPanel.SetActive(false);
+    }
+
+    public void ShowProfilePanel()
+    {
+        setProfilePanel!?.SetActive(true);
     }
 
 }

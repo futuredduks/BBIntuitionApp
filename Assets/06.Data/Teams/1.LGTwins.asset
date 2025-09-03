@@ -15,7 +15,7 @@ MonoBehaviour:
   teamId: 1
   teamNameE: LG Twins
   teamName: "LG \uD2B8\uC708\uC2A4"
-  teamColor: {r: 0.7647059, g: 0.015686275, b: 0.32156864, a: 0}
+  teamColor: {r: 0.7647059, g: 0.015686275, b: 0.32156864, a: 1}
   teamLogo: {fileID: 21300000, guid: 6aea99a436040e545849415a43fc9852, type: 3}
   hatImage: {fileID: 21300000, guid: b6f4d13c03b74684299d91bde28ab47c, type: 3}
   homeStadium: {fileID: 11400000, guid: 43922944c9a499644a9653717b1f2fec, type: 2}

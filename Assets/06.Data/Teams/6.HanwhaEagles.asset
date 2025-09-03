@@ -15,7 +15,7 @@ MonoBehaviour:
   teamId: 6
   teamNameE: Hanwha Eagles
   teamName: "\uD55C\uD654 \uC774\uAE00\uC2A4"
-  teamColor: {r: 0.9529412, g: 0.4509804, b: 0.12941177, a: 0}
+  teamColor: {r: 0.9529412, g: 0.4509804, b: 0.12941177, a: 1}
   teamLogo: {fileID: 21300000, guid: 67daf378a2f85a545819262d50924a71, type: 3}
   hatImage: {fileID: 21300000, guid: de43bf96a6ccec640a37df1ef5632a9c, type: 3}
   homeStadium: {fileID: 11400000, guid: 755c45da4b4d9b9418123eed5e68b27d, type: 2}
