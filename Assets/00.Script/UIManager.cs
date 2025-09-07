@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public GameObject calendarPanel;
     public GameObject addRecordPanel;
     public GameObject setProfilePanel;
+    public GameObject ResultCalendarPanel;
 
     void Awake()
     {

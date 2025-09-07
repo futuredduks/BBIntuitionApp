@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class UserSettingManager : MonoBehaviour
 {
-    public TMP_InputField tmp_nicknameField;
+
     private static string path;
     // Start is called before the first frame update
     private void Awake()
@@ -38,8 +38,5 @@ public class UserSettingManager : MonoBehaviour
         UIManager.Instance.setProfilePanel?.SetActive(false);
     }
 
-    public void InputNickName()
-    {
-        UserSettings.Instance.SetInfoNickName(tmp_nicknameField.text);
-    }
+
 }

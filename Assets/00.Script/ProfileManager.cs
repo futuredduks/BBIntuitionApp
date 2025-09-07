@@ -15,7 +15,9 @@ public class ProfileManager : MonoBehaviour
     public Transform teamViewContent;
     public GameObject teamPrefab;
 
-    public List<GameObject> teambtnList=new List<GameObject>();
+    public List<GameObject> teambtnList = new List<GameObject>();
+
+     public TMP_InputField tmp_nicknameField;
 
     void Awake()
     {
@@ -46,6 +48,20 @@ public class ProfileManager : MonoBehaviour
 
     public void CheckTeam()
     {
-        team.text = "나의 최애 팀:"+"\n"+UserSettings.Instance.MyTeamName;
+        team.text = "나의 최애 팀:" + "\n" + UserSettings.Instance.MyTeamName;
+    }
+    
+    public void InputNickName()
+    {
+        UserSettings.Instance.SetInfoNickName(tmp_nicknameField.text);
+    }
+
+
+/// <summary>
+    /// 저장 된 유저 정보 UI에 세팅 
+    /// </summary>
+    public void setUserInfo()
+    {
+       
     }
 }

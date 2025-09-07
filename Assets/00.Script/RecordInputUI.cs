@@ -154,6 +154,7 @@ public class RecordInputUI : MonoBehaviour
     {
         UIManager.Instance.ShowCalendar((pickedDate) =>
         {
+            Debug.Log("날짜 선택 완료");
             selectedDate = pickedDate;
             txt_selectedDate.text = pickedDate.ToString("yyyy-MM-dd");
         });
